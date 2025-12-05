@@ -3,18 +3,17 @@ import java.util.Queue;
 public class queue {
     int Front, Rear, size,Que[];
 
-    // proper constructor
-    public queue(int size){
+    void Queue(int size){
         this.size=size;
         Que= new int[size];
         Front=Rear=-1;
     }
-
     void enqueue(int data){
         if(Rear==size-1){
             System.out.println("Queue is Full");
         }
-            if(Front == -1) Front = 0; // set front only for the first element
+        else{
+            Front=0;
             Rear++;
             Que[Rear]=data;
         }
@@ -39,13 +38,14 @@ public class queue {
             return;
         }
         for (int i = Front; i <= Rear; i++) {
-            System.out.print(Que[i] + " -- ");
+            System.out.print(Que[i] + " - ");
         }
         System.out.println();
     }
 
     public static void main(String[] args) {
-        queue q = new queue(5);
+        queue q = new queue();
+        q.Queue(5);
         q.enqueue(10);
         q.enqueue(20);
         q.enqueue(30);
