@@ -1,0 +1,33 @@
+# Java
+*.class
+*.jar
+*.war
+*.ear
+
+# Maven/Gradle
+/target/
+/build/
+.gradle/
+
+# IDE files
+*.iml
+/.idea/
+/.project
+/.classpath
+
+# IntelliJ
+out/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# CLion / CMake build directories (from workspace)
+cmake-build-debug/
+
+# logs
+*.log
+
+# temporary files
+*.tmp
+
