@@ -1,10 +1,7 @@
+import java.util.Queue;
+
 public class queue {
     int Front, Rear, size,Que[];
-
-    // default constructor
-    public queue(){
-        this(10);
-    }
 
     // proper constructor
     public queue(int size){
@@ -17,7 +14,6 @@ public class queue {
         if(Rear==size-1){
             System.out.println("Queue is Full");
         }
-        else{
             if(Front == -1) Front = 0; // set front only for the first element
             Rear++;
             Que[Rear]=data;

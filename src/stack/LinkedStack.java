@@ -1,3 +1,5 @@
+package stack;
+
 public class LinkedStack {
     class Node {
         int data;
@@ -20,7 +22,7 @@ public class LinkedStack {
     }
 
     void pop(){
-        if(top==null){System.out.println("LinkedStack is Empty");}
+        if(top==null){System.out.println("stack.LinkedStack is Empty");}
         else{
             Node temp=top;
             top=top.next;
@@ -29,14 +31,14 @@ public class LinkedStack {
     }
 
     void peek(){
-        if(top==null){System.out.println("LinkedStack is Empty");}
+        if(top==null){System.out.println("stack.LinkedStack is Empty");}
         else{
             System.out.println("Top Element is "+top.data);
         }
     }
 
     void display(){
-        if(top==null){System.out.println("LinkedStack is Empty");}
+        if(top==null){System.out.println("stack.LinkedStack is Empty");}
         else{
             Node temp=top;
             while(temp!=null){

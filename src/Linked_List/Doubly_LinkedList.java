@@ -1,24 +1,24 @@
 //import java.util.Scanner;
 //
-//class Node{
+//class Linked_List.Node{
 //    int data;
-//    Node left;
-//    Node right;
-//    Node(int data){
+//    Linked_List.Node left;
+//    Linked_List.Node right;
+//    Linked_List.Node(int data){
 //        this.data=data;
 //        this.left =null;
 //        this.right=null;
 //    }}
 //
 //public class Doubly_LinkedList {
-//    Node head,Tail;
+//    Linked_List.Node head,Tail;
 //    Doubly_LinkedList(){
 //        head=null;
 //        Tail=null;
 //    }
 //
 //    void insertAtFirst(int data){
-//        Node n=new Node(data);
+//        Linked_List.Node n=new Linked_List.Node(data);
 //        if(head==null){
 //            head=n;
 //            Tail=n;
@@ -31,7 +31,7 @@
 //    }
 //
 //    void insertAtLast(int data){
-//        Node n=new Node(data);
+//        Linked_List.Node n=new Linked_List.Node(data);
 //        if(head==null){
 //            head=n;
 //            Tail=n;
@@ -44,13 +44,13 @@
 //    }
 //
 //    void insertAtPos(int data,int Pos){
-//        Node n=new Node(data);
+//        Linked_List.Node n=new Linked_List.Node(data);
 //        if(head==null){
 //            head=n;
 //            Tail=n;
 //        }
 //        else{
-//            Node prev=head,curr=head;
+//            Linked_List.Node prev=head,curr=head;
 //            for(int i=1;i<Pos;i++){
 //                prev=curr;
 //                curr=curr.right;
@@ -65,7 +65,7 @@
 //    void deleteAtFirst(){
 //        if(head==null){System.out.println("List is empty");}
 //        else{
-//            Node temp=head;
+//            Linked_List.Node temp=head;
 //            head=temp.right;
 //            head.left =null;
 //        }
@@ -74,17 +74,17 @@
 //    void deleteAtLast(){
 //        if(head==null){System.out.println("List is empty");}
 //        else{
-//            Node temp=Tail;
+//            Linked_List.Node temp=Tail;
 //            Tail=temp.left;
 //            Tail.right=null;
 //        }
 //    }
 //
 //    void deleteAtPos(int data,int Pos){
-//        Node n=new Node(data);
+//        Linked_List.Node n=new Linked_List.Node(data);
 //        if(head==null){System.out.println("List is empty");}
 //        else{
-//            Node prev=head,curr=head,temp=head;
+//            Linked_List.Node prev=head,curr=head,temp=head;
 //            for(int i=1;i<Pos;i++){
 //                prev=curr;
 //                curr=curr.right;
@@ -98,7 +98,7 @@
 //    }
 //
 //    void traversefwd(){
-//        Node temp=head;
+//        Linked_List.Node temp=head;
 //        while(temp!=null){
 //            System.out.print(temp.data+" <=> ");
 //            temp=temp.right;
@@ -107,7 +107,7 @@
 //    }
 //
 //    void traversebwd(){
-//        Node temp=Tail;
+//        Linked_List.Node temp=Tail;
 //        while(temp!=null){
 //            System.out.print(temp.data+" <=> ");
 //            temp=temp.left;
@@ -116,7 +116,7 @@
 //    }
 //
 //    void search(int data){
-//        Node temp=head;
+//        Linked_List.Node temp=head;
 //        int pos=0;
 //        boolean found=false;
 //        while(temp!=null){
