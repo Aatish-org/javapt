@@ -9,7 +9,6 @@ public class LinkedStack {
     }
 
     Node top;
-//    LStack(){top=null;}
 
     void push(int data){
         Node n=new Node(data);
@@ -53,6 +52,8 @@ public class LinkedStack {
         LinkedStack ls=new LinkedStack();
         ls.push(10);
         ls.push(20);
+        ls.push(30);
+        ls.display();
         ls.peek();
 
     }
